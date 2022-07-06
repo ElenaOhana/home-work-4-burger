@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BestBurger</title>
+    <link rel="icon" href="https://recipes.barbecueplanner.com/wp-content/uploads/2020/09/BarbecuePlanner_Icon-768x768.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="site.js"></script>
+  </head>
+  <body>
+    <div>
+      <marquee>Buy the best burger in Tel Aviv</marquee>
+      <div class="header">
+        <img rel="icon" type="image/x-icon" src="https://recipes.barbecueplanner.com/wp-content/uploads/2020/09/BarbecuePlanner_Icon-768x768.png" width="40" height="40">
+          <h1>The testiest burger is here!</h1>
+      </div>
+      <h2>Make your own burger.</h2>
+      <br>
+      <div id="definition">The basic burger price is 42 ils.</div>
+      <div id="definition">Please feel free to add any of the below additions to your burger.</div>
+      <br>
+    </div>
+    <div class="plusMinus">
+      <button class="plus" onclick="plusMeat()">+</button>
+      <span class="container">Meat</span>
+      <button class="minus" onclick="minusMeat()">-</button>
+      <span class="tooltipText">Price: 18 ils</span>
+    </div>
+    <div class="plusMinus">
+      <button class="plus" onclick="plusCheese()">+</button>
+      <span class="container">Cheese</span>
+      <button class="minus" onclick="minusCheese()">-</button>
+      <span class="tooltipText">Price: 9 ils</span>
+    </div>
+    <div class="plusMinus">
+      <button class="plus" onclick="plusTomato()">+</button>
+      <span class="container">Tomato</span>
+      <button class="minus" onclick="minusTomato()">-</button>
+      <span class="tooltipText">Price: 6 ils</span>
+    </div>
+    <div class="plusMinus">
+      <button class="plus" onclick="plusLettuce()">+</button>
+      <span class="container">Lettuce</span>
+      <button class="minus" onclick="minusLettuce()">-</button>
+      <span class="tooltipText">Price: 5 ils</span>
+    </div>
+    <br />
+    <div id="price">Total price is: 42 ILS</div>
+    <br />
+    <div id="burger">
+      <div class="bread">
+        <div class="upperBread"></div>
+      </div>
+
+      <div id="additionalMeat">
+        <div id="meatContainer">
+          <div class="meat"></div>
+        </div>
+      </div>
+
+      <div id="additionalCheese">
+        <div id="cheeseContainer"></div>
+      </div>
+
+      <div id="additionalTomato">
+        <div id="tomatoContainer"></div>
+      </div>
+
+      <div id="additionalLettuce">
+        <div id="lettuceContainer"></div>
+      </div>
+
+      <div class="bread">
+        <div class="lowerBread"></div>
+      </div>
+    </div>
+
+    <div><input type="button" onclick="location.href='payment.html';" value="Go to pay" /></div>
+    <br />
+    <br />
+  </body>
+</html>
